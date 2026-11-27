@@ -1,5 +1,5 @@
 let currentTime = Date.now()
-let gameData = {tab: "De Noido", lastTab: "DeNoido", lastMetaTab: "Rage", treePoints: new Decimal(0), wastedTreePoints: new Decimal(0), totalTreePoints: new Decimal(0), lastTreeTab: "Tree of Skill", achNotifShow: false, achNotifTimer: new Decimal(5), fileNotifShow: false, fileNotifTimer: new Decimal(1), metaTab: "Main", firstTime: false, prestiges: new Decimal(0), rage: new Decimal(0), despair: new Decimal(0), maxPoints: new Decimal(0), gameState: "stop", points: new Decimal(0), maxPoints: new Decimal(0), timeSurvival: new Decimal(0), autosave: new Decimal(60), timer: new Decimal(10), deNoidoPoints: new Decimal(1), deNoidoPower: new Decimal(1), currentSave: "", upgrades: [], metaUpgrades: [], permUpgrades: [], buyables: [], metaBuyables: [], permBuyables: [], achievements: []}
+let gameData = {tab: "De Noido", lastTab: "DeNoido", lastMetaTab: "Rage", treePoints: new Decimal(0), wastedTreePoints: new Decimal(0), totalTreePoints: new Decimal(0), lastTreeTab: "Tree of Skill", achNotifShow: false, achNotifTimer: new Decimal(5), fileNotifShow: false, fileNotifTimer: new Decimal(1), metaTab: "Main", firstTime: false, prestiges: new Decimal(0), rage: new Decimal(0), despair: new Decimal(0), maxPoints: new Decimal(0), gameState: "stop", points: new Decimal(0), maxPoints: new Decimal(0), timeSurvival: new Decimal(0), autosave: new Decimal(10), timer: new Decimal(60), deNoidoPoints: new Decimal(1), deNoidoPower: new Decimal(1), currentSave: "", upgrades: [], metaUpgrades: [], permUpgrades: [], buyables: [], metaBuyables: [], permBuyables: [], achievements: []}
 let upgrades = {
 	"0_0": {
 		title: "Slightly Irritating Boost",
@@ -164,7 +164,7 @@ let achievements = {
 }
 
 function getGameData(){
-	return {tab: "De Noido", lastTab: "DeNoido", lastMetaTab: "Rage", treePoints: new Decimal(0), wastedTreePoints: new Decimal(0), totalTreePoints: new Decimal(0), lastTreeTab: "Tree of Skill", achNotifShow: false, achNotifTimer: new Decimal(5), fileNotifShow: false, fileNotifTimer: new Decimal(1), metaTab: "Main", firstTime: false, prestiges: new Decimal(0), rage: new Decimal(0), despair: new Decimal(0), maxPoints: new Decimal(0), gameState: "stop", points: new Decimal(0), maxPoints: new Decimal(0), timeSurvival: new Decimal(0), autosave: new Decimal(60), timer: new Decimal(10), deNoidoPoints: new Decimal(1), deNoidoPower: new Decimal(1), currentSave: "", upgrades: [], metaUpgrades: [], permUpgrades: [], buyables: [], metaBuyables: [], permBuyables: [], achievements: []}
+	return {tab: "De Noido", lastTab: "DeNoido", lastMetaTab: "Rage", treePoints: new Decimal(0), wastedTreePoints: new Decimal(0), totalTreePoints: new Decimal(0), lastTreeTab: "Tree of Skill", achNotifShow: false, achNotifTimer: new Decimal(5), fileNotifShow: false, fileNotifTimer: new Decimal(1), metaTab: "Main", firstTime: false, prestiges: new Decimal(0), rage: new Decimal(0), despair: new Decimal(0), maxPoints: new Decimal(0), gameState: "stop", points: new Decimal(0), maxPoints: new Decimal(0), timeSurvival: new Decimal(0), autosave: new Decimal(10), timer: new Decimal(60), deNoidoPoints: new Decimal(1), deNoidoPower: new Decimal(1), currentSave: "", upgrades: [], metaUpgrades: [], permUpgrades: [], buyables: [], metaBuyables: [], permBuyables: [], achievements: []}
 }
 
 function deusExMachina(){
@@ -210,7 +210,7 @@ function prestige(){
 		document.getElementById("evilChase").volume = 1
 		gameData.timeSurvival = new Decimal(0)
 		gameData.maxPoints = new Decimal(0)
-		gameData.timer = new Decimal(10)
+		gameData.timer = new Decimal(60)
 		gameData.points = new Decimal(0)
 		gameData.treePoints = gameData.treePoints.add(1)
 		gameData.upgrades = []
