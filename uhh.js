@@ -4,7 +4,7 @@ let upgrades = {
 	"0_0": {
 		title: "Slightly Irritating Boost",
 		description: "Boosts your point gain by points",
-		cost: new Decimal(11),
+		cost: new Decimal(1),
 		pointName: "points",
 		pointStuff: "points",
 		effect(){return gameData.points.add(1).log(10).add(1)},
@@ -14,7 +14,7 @@ let upgrades = {
 	"0_1": {
 		title: "Peppino's Blessing",
 		description: "Boosts point and rage gain by 1.2x",
-		cost: new Decimal(110),
+		cost: new Decimal(10),
 		pointName: "points",
 		pointStuff: "points",
 		effect(){return 0},
@@ -23,7 +23,7 @@ let upgrades = {
 	"0_2": {
 		title: "hi",
 		description: "THis is tmt mod",
-		cost: new Decimal(11063),
+		cost: new Decimal(100),
 		pointName: "points",
 		pointStuff: "points",
 		effect(){return gameData.points.add(1).log(10).add(1)},
@@ -34,7 +34,7 @@ let upgrades = {
 	"0_3": {
 		title: "hi",
 		description: "THis is tmt mod",
-		cost: new Decimal(1106311),
+		cost: new Decimal(1000),
 		pointName: "points",
 		pointStuff: "points",
 		effect(){return gameData.points.add(1).log(10).add(1)},
@@ -45,7 +45,7 @@ let upgrades = {
 	"0_4": {
 		title: "hi",
 		description: "THis is tmt mod",
-		cost: new Decimal(1106311063),
+		cost: new Decimal(1000000),
 		pointName: "points",
 		pointStuff: "points",
 		effect(){return gameData.points.add(1).log(10).add(1)},
